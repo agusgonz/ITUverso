@@ -7,6 +7,7 @@ import {
   ScrollRestoration,
 } from "react-router";
 
+import 'bootstrap-icons/font/bootstrap-icons.css';
 import type { Route } from "./+types/root";
 import "./app.css";
 import "bootstrap/dist/css/bootstrap.min.css";

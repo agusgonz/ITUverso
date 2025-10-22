@@ -9,20 +9,28 @@ export default function Home() {
 
       <section className="hero">
         <div className="hero-text">
-          <h1>📚 Bienvenido a ITUverso</h1>
+          <h1>📚 Bienvenido a <strong>ITUverso</strong></h1>
           <p>
             El espacio colaborativo donde los alumnos del ITU comparten apuntes,
             archivos y experiencias académicas.
           </p>
         </div>
-        <img src="/hero.png" alt="Hero" className="hero-img" />
+        <a href="#"><img src="/programador.jpg" alt="Hero" className="hero-img" /></a>
       </section>
 
       <section className="posts">
-        <h2>Posts recientes</h2>
+        <h2><strong>Posts recientes</strong></h2>
         <div className="card-grid">
           <article className="card">
-            <img src="/poo.jpg" alt="POO" className="card-img" />
+            <video 
+              autoPlay 
+              loop 
+              muted 
+              playsInline
+              className="card-gif"
+            >
+              <source src="/poo.mp4" type="video/mp4" />
+            </video>
             <div className="card-body">
               <h3>POO - Juan Pérez</h3>
               <p>
@@ -34,7 +42,15 @@ export default function Home() {
           </article>
 
           <article className="card">
-            <img src="/diseno.jpg" alt="Diseño de software" className="card-img" />
+            <video 
+              autoPlay 
+              loop 
+              muted 
+              playsInline
+              className="card-gif"
+            >
+              <source src="/diseño.mp4" type="video/mp4" />
+            </video>
             <div className="card-body">
               <h3>Diseño de Software - Ana Martínez</h3>
               <p>
@@ -45,7 +61,15 @@ export default function Home() {
           </article>
 
           <article className="card">
-            <img src="/redes.jpg" alt="Redes" className="card-img" />
+            <video 
+              autoPlay 
+              loop 
+              muted 
+              playsInline
+              className="card-gif"
+            >
+              <source src="/redes.mp4" type="video/mp4" />
+            </video>
             <div className="card-body">
               <h3>Redes - Amparo Lino</h3>
               <p>
@@ -54,19 +78,60 @@ export default function Home() {
               <span className="tags">#Redes #3°Año</span>
             </div>
           </article>
+
+          {/* MODIFICAR */}
+          <article className="card">
+            <video 
+              autoPlay 
+              loop 
+              muted 
+              playsInline
+              className="card-gif"
+            >
+              <source src="/poo.mp4" type="video/mp4" />
+            </video>
+            <div className="card-body">
+              <h3>MODIFICAR</h3>
+              <p>
+                Apuntes de programación orientada a objetos, con ejemplos de
+                herencia y polimorfismo.
+              </p>
+              <span className="tags">#Programación #2°Año #POO</span>
+            </div>
+          </article>
+          <article className="card">
+            <video 
+              autoPlay 
+              loop 
+              muted 
+              playsInline
+              className="card-gif"
+            >
+              <source src="/poo.mp4" type="video/mp4" />
+            </video>
+            <div className="card-body">
+              <h3>MODIFICAR</h3>
+              <p>
+                Apuntes de programación orientada a objetos, con ejemplos de
+                herencia y polimorfismo.
+              </p>
+              <span className="tags">#Programación #2°Año #POO</span>
+            </div>
+          </article>
+          
         </div>
       </section>
 
       <section className="comentarios">
-        <h2>Comentarios</h2>
+        <h2><strong>Comentarios</strong></h2>
         <div className="comentarios-grid">
           <div className="comentario">
             <p>“No saben lo que me ayudaron a entender BD.”</p>
             <div className="usuario">
-              <img src="/avatar1.png" alt="Alan Pérez" className="avatar" />
+              <i className="bi bi-person-circle"></i>
               <div>
                 <strong>Alan Pérez</strong><br />
-                <span>4° semestre</span>
+                <span>4° Semestre</span>
               </div>
             </div>
           </div>
@@ -74,10 +139,10 @@ export default function Home() {
           <div className="comentario">
             <p>“Alguien conoce el modelo de evaluación de sistemas operativos??”</p>
             <div className="usuario">
-              <img src="/avatar2.png" alt="Catalina Rodríguez" className="avatar" />
+              <i className="bi bi-person-circle"></i>
               <div>
                 <strong>Catalina Rodríguez</strong><br />
-                <span>3° semestre</span>
+                <span>3° Semestre</span>
               </div>
             </div>
           </div>
@@ -85,14 +150,15 @@ export default function Home() {
           <div className="comentario">
             <p>“Recomiendo Figma para diseño de páginas web y diagramas, muy buena.”</p>
             <div className="usuario">
-              <img src="/avatar3.png" alt="Amparo Lino" className="avatar" />
+              <i className="bi bi-person-circle"></i>
               <div>
                 <strong>Amparo Lino</strong><br />
-                <span>5° semestre</span>
+                <span>5° Semestre</span>
               </div>
             </div>
           </div>
         </div>
+
       </section>
 
       <Footer />

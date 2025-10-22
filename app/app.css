@@ -1,15 +1,191 @@
-@import "tailwindcss";
-
-@theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+/* ===== RESET GENERAL ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
-html,
 body {
-  @apply bg-white dark:bg-gray-950;
+  background-color: #ffffff;
+  color: #444;
+}
 
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
+/* ===== NAVBAR ===== */
+.navigation {
+  background-color: #00656a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.btn-buscar {
+  background-color: #444;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* ===== HERO ===== */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem;
+  background-color: #00686c;
+  border-radius: 10px;
+  color: #fff;
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  max-width: 500px;
+}
+
+.hero-img {
+  width: 50%;
+  border-radius: 10px;
+}
+
+/* ===== POSTS ===== */
+.posts {
+  max-width: 1200px;
+  margin: 4rem auto;
+}
+
+.posts h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 30%;
+}
+
+.card-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-body h3 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.card-body p {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.tags {
+  color: #00656a;
+  font-weight: bold;
+}
+
+/* ===== COMENTARIOS ===== */
+.comentarios {
+  max-width: 1200px;
+  margin: 4rem auto;
+}
+
+.comentarios h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.comentarios-grid {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.comentario {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  flex: 1;
+}
+
+.comentario p {
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.usuario {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.usuario img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background-color: #00686c;
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 4rem;
+}
+
+.footer .social {
+  margin-bottom: 1rem;
+}
+
+.footer .social a img {
+  width: 30px;
+  margin: 0 8px;
+  filter: brightness(0) invert(1);
+  transition: 0.3s;
+}
+
+.footer .social a img:hover {
+  transform: scale(1.1);
 }

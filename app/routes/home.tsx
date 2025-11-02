@@ -1,6 +1,7 @@
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import "../app.css"; // importa tus estilos globales
+import ContentRotator from "../Components/ContentRotator";
 
 export default function Home() {
   return (
@@ -81,22 +82,13 @@ export default function Home() {
 
           {/* MODIFICAR */}
           <article className="card">
-            <video 
-              autoPlay 
-              loop 
-              muted 
-              playsInline
-              className="card-gif"
-            >
-              <source src="/poo.mp4" type="video/mp4" />
-            </video>
+            <img src="/patoituverso.jpg" alt="imagen"/>
             <div className="card-body">
-              <h3>MODIFICAR</h3>
+              <h3>Cuenta UNCuyo</h3>
               <p>
-                Apuntes de programación orientada a objetos, con ejemplos de
-                herencia y polimorfismo.
+                  Crea tu cuenta UNCuyo fácil y rápido.
               </p>
-              <span className="tags">#Programación #2°Año #POO</span>
+              <span className="tags">#UNCUYO #365</span>
             </div>
           </article>
           <article className="card">
@@ -122,44 +114,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="comentarios">
-        <h2><strong>Comentarios</strong></h2>
-        <div className="comentarios-grid">
-          <div className="comentario">
-            <p>“No saben lo que me ayudaron a entender BD.”</p>
-            <div className="usuario">
-              <i className="bi bi-person-circle"></i>
-              <div>
-                <strong>Alan Pérez</strong><br />
-                <span>4° Semestre</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="comentario">
-            <p>“Alguien conoce el modelo de evaluación de sistemas operativos??”</p>
-            <div className="usuario">
-              <i className="bi bi-person-circle"></i>
-              <div>
-                <strong>Catalina Rodríguez</strong><br />
-                <span>3° Semestre</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="comentario">
-            <p>“Recomiendo Figma para diseño de páginas web y diagramas, muy buena.”</p>
-            <div className="usuario">
-              <i className="bi bi-person-circle"></i>
-              <div>
-                <strong>Amparo Lino</strong><br />
-                <span>5° Semestre</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </section>
+      <ContentRotator />
 
       <Footer />
     </>

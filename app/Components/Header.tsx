@@ -8,6 +8,7 @@ export default function Header() {
       </div>
       <nav className="nav-items">
         <a href="/" className="nav-link">Inicio</a>
+        <a href="/posts" className="nav-link">Ver posts</a>
         <a href="#" className="nav-link">Crear post</a>
         <a href="#" className="nav-link">Tags</a>
         <button className="btn btn-dark btn-buscar">Buscar</button>

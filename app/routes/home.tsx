@@ -1,12 +1,9 @@
-import Header from "../Components/Header";
-import Footer from "../Components/Footer";
 import "../app.css"; // importa tus estilos globales
 import ContentRotator from "../Components/ContentRotator";
 
 export default function Home() {
   return (
     <>
-      <Header />
 
       <section className="hero">
         <div className="hero-text">
@@ -116,7 +113,6 @@ export default function Home() {
 
       <ContentRotator />
 
-      <Footer />
     </>
   );
 }

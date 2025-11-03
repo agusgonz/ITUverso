@@ -11,6 +11,10 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import type { Route } from "./+types/root";
 import "./app.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./app.css"; // importa tus estilos globales
+import Header from "./Components/Header";
+import Footer from "./Components/Footer";
+
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -35,9 +39,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
+      <Header />
         {children}
         <ScrollRestoration />
         <Scripts />
+        <Footer />
+
       </body>
     </html>
   );

@@ -320,3 +320,100 @@ body {
   background-color: #007bff;
 }
 
+.sectionPosts {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1200px; /* sensible desktop max width */
+    margin: 0 auto;     /* center the section */
+    padding: 2rem 1.5rem; /* vertical | horizontal padding */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Responsive adjustments */
+@media (min-width: 1280px) {
+    .sectionPosts {
+        max-width: 1400px;
+        padding: 3rem 2rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .sectionPosts {
+        padding: 1rem;
+    }
+}
+
+.postTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.postTag {
+    display: inline-block;
+    background-color: #eef2ff; /* light indigo */
+    color: #3730a3; /* indigo-800 */
+    padding: 0.25rem 0.5rem;
+    border-radius: 9999px; /* pill */
+    font-size: 0.875rem; /* text-sm */
+    line-height: 1;
+    border: 1px solid rgba(55, 48, 163, 0.08);
+}
+
+.noTags {
+    color: #6b7280; /* gray-500 */
+    font-size: 0.875rem;
+}
+
+.postsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem; /* espacio entre posts */
+    align-items: start;
+    grid-auto-flow: row;
+}
+
+.postsContainer > article {
+    background: #ffffff; /* fondo blanco para cada tarjeta */
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06); /* sutil sombra */
+    border: 1px solid rgba(15, 23, 42, 0.04);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.postsContainer > article header h2 {
+    margin: 0;
+    font-size: 1.125rem;
+}
+
+.postImage {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+@media (min-width: 640px) {
+    .postImage {
+        height: 200px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .postImage {
+        height: 220px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .postsContainer {
+        gap: 2rem;
+    }
+}

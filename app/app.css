@@ -231,7 +231,6 @@ body {
   transform: scale(1.1);
 }
 
-/* ===== otros ===== */
 .card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -241,8 +240,6 @@ body {
   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
-
-/* O más específico */
 .navigation .logo-img {
   width: 50px;
   height: auto;
@@ -328,3 +325,19 @@ body {
   background-color: #007bff;
 }
 
+.footer .social {
+  display: flex;          
+  justify-content: center;
+  gap: 15px;             
+  margin-bottom: 10px;   
+}
+
+.footer .social a {
+  color: #fff;          
+  font-size: 24px;       
+  transition: color 0.3s; 
+}
+
+.footer .social a:hover {
+  color: #0dcaf0; 
+}

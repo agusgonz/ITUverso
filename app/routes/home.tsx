@@ -2,6 +2,7 @@ import PostCard from "~/Components/Posts";
 import "../app.css"; // importa tus estilos globales
 import ContentRotator from "../Components/ContentRotator";
 import { getRandomImage } from "~/utils/getRandomImage";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const postsMentira = [
   {

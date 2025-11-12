@@ -128,7 +128,7 @@ const postsMentira = [
 
 export default function Home() {
   return (
-    <>
+    <div className="flex flex-col items-center justify-center ">
 
       <section className="hero">
         <div className="hero-text">
@@ -162,6 +162,6 @@ export default function Home() {
 
       <ContentRotator />
 
-    </>
+    </div>
   );
 }

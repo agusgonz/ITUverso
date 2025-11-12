@@ -70,8 +70,8 @@ body {
   background-color: #00686c;
   border-radius: 10px;
   color: #fff;
-  margin: 2rem auto;
-  max-width: 1200px;
+  margin: 48px 0px;
+  width: 1200px;
 }
 
 .hero-text h1 {
@@ -330,25 +330,11 @@ body {
     width: 100%;
     max-width: 1200px; /* sensible desktop max width */
     margin: 0 auto;     /* center the section */
-    padding: 2rem 1.5rem; /* vertical | horizontal padding */
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
-/* Responsive adjustments */
-@media (min-width: 1280px) {
-    .sectionPosts {
-        max-width: 1400px;
-        padding: 3rem 2rem;
-    }
-}
-
-@media (max-width: 640px) {
-    .sectionPosts {
-        padding: 1rem;
-    }
-}
 
 .postTags {
     display: flex;

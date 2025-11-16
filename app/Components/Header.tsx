@@ -3,7 +3,7 @@ export default function Header() {
     <header className="navigation">
       <div className="logo">
         <a href="/">
-          <img src="ITUverso.jpg" alt="ITUverso Logo" className="logo-img"/>
+          <img src="/ITUverso.jpg" alt="ITUverso Logo" className="logo-img"/>
         </a>
       </div>
       <nav className="nav-items">

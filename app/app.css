@@ -52,6 +52,13 @@ body {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
 }
 
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+
 .btn-buscar {
   background-color: #444;
   color: #fff;

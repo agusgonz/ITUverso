@@ -9,9 +9,9 @@ export default function Header() {
       <nav className="nav-items">
         <a href="/" className="nav-link">Inicio</a>
         <a href="/posts" className="nav-link">Ver posts</a>
-        <a href="#" className="nav-link">Crear post</a>
+        <a href="/Form/" className="nav-link">Crear post</a>
         <a href="/Tags" className="nav-link">Tags</a>
-        <button className="btn btn-dark btn-buscar">Buscar</button>
+        <button className="btn btn-dark btn-buscar"><i className="bi bi-search"></i></button>
       </nav>
     </header>
   );

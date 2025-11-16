@@ -4,4 +4,5 @@ export default [
   index("routes/home.tsx"),
   route("posts", "routes/posts/posts.tsx"), // <--- registra /posts
   route("tags", "routes/tags/tags.tsx"),   // <-- /tags
+  route("Form", "routes/Form/Form.tsx"), // <--- registra /posts
 ] satisfies RouteConfig;
